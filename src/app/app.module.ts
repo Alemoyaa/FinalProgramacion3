@@ -9,13 +9,15 @@ import { AgregarPersonaComponent } from './componentes/agregar-persona/agregar-p
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { ErrorComponent } from './componentes/error/error.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaPersonaComponent,
-    AgregarPersonaComponent
+    AgregarPersonaComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
