@@ -1,0 +1,26 @@
+<div class="container">
+  <table class="table table-striped table-dark mt-3">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">DNI</th>
+        <th scope="col">Herramientas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of personas">
+        <td>{{persona.id}}</td>
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellido}}</td>
+        <td>{{persona.dni}}</td>
+        <td>
+          <button type="button" class="btn btn-danger mr-3" (click)="eliminarP(persona.id)">Eliminar</button>
+          <button type="button" class="btn btn-warning" (click)="editarP(persona.id)">Editar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-success btn-block mt-3" (click)="agregar(0)">Agregar persona</button>
+</div>
